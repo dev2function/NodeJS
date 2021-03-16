@@ -1,5 +1,10 @@
 pipeline {
-  agent any
+  agent {
+    node {
+      label 'node_env'
+    }
+
+  }
   stages {
     stage('Pull') {
       steps {
