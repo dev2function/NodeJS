@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Pull') {
       steps {
-        git(url: 'git@github.com:dev2function/NodeJS.git', branch: 'master')
+        git(url: 'https://github.com/dev2function/NodeJS.git', branch: 'master')
       }
     }
 
